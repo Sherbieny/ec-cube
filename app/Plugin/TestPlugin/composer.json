@@ -1,0 +1,12 @@
+{
+    "name": "ec-cube/TestPlugin",
+    "version": "1.0.0",
+    "description": "Test Plugin",
+    "type": "eccube-plugin",
+    "require": {
+        "ec-cube/plugin-installer": "~0.0.7"
+    },
+    "extra": {
+        "code": "TestPlugin"
+    }
+}
