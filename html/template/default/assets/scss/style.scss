@@ -1,25 +1,25 @@
-@import url('../../../../../node_modules/normalize.css/normalize.css');
+@import url("../../../../../node_modules/normalize.css/normalize.css");
 @import "mixins/variables";
 @import "../../../../../node_modules/bootstrap/scss/bootstrap";
 
 body {
-  color:#525263;
-  transition: z-index 0ms 5.28455ms;
-  background: #f6f6f6;
-  margin: 0;
+    color: #525263;
+    transition: z-index 0ms 5.28455ms;
+    background: #f6f6f6;
+    margin: 0;
 }
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 pre {
-  background-color: transparent;
-  border: none;
-  padding: 16px 0;
+    background-color: transparent;
+    border: none;
+    padding: 16px 0;
 }
 p {
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
 }
 @import "component/1.1.heading";
 @import "component/1.2.typo";
@@ -69,3 +69,6 @@ p {
 @import "project/20.1.404";
 @import "project/21.1.withdraw";
 @import "project/22.1.editComplete";
+
+// Shared Styles
+@import "../../../shared/assets/scss/style.scss";
