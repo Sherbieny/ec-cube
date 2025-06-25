@@ -1,5 +1,6 @@
 @charset "UTF-8";
-html, body {
+html,
+body {
   font-size: 14px;
   background: #eff0f4;
   background-color: #eff0f4 !important;
@@ -14,11 +15,14 @@ ul {
 li {
   list-style: none;
 }
-dl, ol, ul {
+dl,
+ol,
+ul {
   margin-top: 0;
   margin-bottom: 0;
 }
-a, button {
+a,
+button {
   cursor: pointer;
 }
 /*
