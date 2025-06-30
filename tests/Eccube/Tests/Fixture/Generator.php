@@ -298,7 +298,7 @@ class Generator
      * CustomerAddress を生成して返す.
      *
      * @param Customer $Customer 対象の Customer インスタンス
-     * @param boolean $is_nonmember 非会員の場合 true
+     * @param bool $is_nonmember 非会員の場合 true
      *
      * @return CustomerAddress
      */
@@ -388,7 +388,7 @@ class Generator
      * $product_class_num = 0 とすると商品規格の無い商品を生成する.
      *
      * @param string $product_name 商品名. null の場合はランダムな文字列が生成される.
-     * @param integer $product_class_num 商品規格の生成数
+     * @param int $product_class_num 商品規格の生成数
      * @param bool $with_image 画像を生成する場合 true, 生成しない場合 false
      *
      * @return Product
@@ -577,9 +577,9 @@ class Generator
      * @param Customer $Customer Customer インスタンス
      * @param array $ProductClasses 明細行となる ProductClass の配列
      * @param Delivery $Delivery Delivery インスタンス
-     * @param integer $add_charge Order に加算される手数料
-     * @param integer $add_discount Order に加算される値引き額
-     * @param integer $statusTypeId OrderStatus:id
+     * @param int $add_charge Order に加算される手数料
+     * @param int $add_discount Order に加算される値引き額
+     * @param int $statusTypeId OrderStatus:id
      *
      * @return Order
      */
@@ -764,9 +764,9 @@ class Generator
      *
      * @param Delivery $Delivery デフォルトで設定する配送オブジェクト
      * @param string $method 支払い方法名称
-     * @param integer $charge 手数料
-     * @param integer $rule_min 下限金額
-     * @param integer $rule_max 上限金額
+     * @param int $charge 手数料
+     * @param int $rule_min 下限金額
+     * @param int $rule_max 上限金額
      *
      * @return Payment
      */
@@ -804,7 +804,7 @@ class Generator
     /**
      * 配送方法を生成する.
      *
-     * @param integer $delivery_time_max_pattern 配送時間の最大パターン数
+     * @param int $delivery_time_max_pattern 配送時間の最大パターン数
      *
      * @return Delivery
      */

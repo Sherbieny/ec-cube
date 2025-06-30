@@ -53,7 +53,7 @@ class PaymentChargePreprocessor implements ItemHolderPreprocessor
     public function __construct(
         OrderItemTypeRepository $orderItemTypeRepository,
         TaxDisplayTypeRepository $taxDisplayTypeRepository,
-        TaxTypeRepository $taxTypeRepository
+        TaxTypeRepository $taxTypeRepository,
     ) {
         $this->orderItemTypeRepository = $orderItemTypeRepository;
         $this->taxDisplayTypeRepository = $taxDisplayTypeRepository;

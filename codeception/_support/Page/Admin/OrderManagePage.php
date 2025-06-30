@@ -300,7 +300,7 @@ class OrderManagePage extends AbstractAdminPageStyleGuide
             // order_status でソート
             $statusList = ['新規受付', '注文取消し', '対応中', '発送済み', '入金済み', '決済処理中', '購入処理中', '返品'];
 
-            return array_search($a, $statusList) > array_search($b, $statusList);
+            return array_search($a, $statusList) <=> array_search($b, $statusList);
         });
 
         if ($order === 'desc') {

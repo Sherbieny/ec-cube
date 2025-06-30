@@ -91,7 +91,7 @@ class CustomerManagePage extends AbstractAdminPageStyleGuide
     }
 
     /**
-     * @param integer $rowNum
+     * @param int $rowNum
      */
     public function 一覧_編集($rowNum)
     {
@@ -101,7 +101,7 @@ class CustomerManagePage extends AbstractAdminPageStyleGuide
     }
 
     /**
-     * @param integer $rowNum
+     * @param int $rowNum
      */
     public function 一覧_削除($rowNum, $execute = true)
     {
@@ -117,7 +117,7 @@ class CustomerManagePage extends AbstractAdminPageStyleGuide
     }
 
     /**
-     * @param integer $rowNum
+     * @param int $rowNum
      */
     public function 一覧_仮会員メール再送($rowNum, $execute = true)
     {
@@ -145,7 +145,7 @@ class CustomerManagePage extends AbstractAdminPageStyleGuide
     }
 
     /**
-     * @param integer $rowNum
+     * @param int $rowNum
      */
     public function 一覧_会員ID($rowNum)
     {

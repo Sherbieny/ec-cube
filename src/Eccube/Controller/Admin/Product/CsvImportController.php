@@ -1710,7 +1710,7 @@ class CsvImportController extends AbstractCsvImportController
     }
 
     /**
-     * @return boolean
+     * @return bool
      */
     protected function hasErrors()
     {
@@ -2012,17 +2012,17 @@ class CsvImportController extends AbstractCsvImportController
             $dist = new \SplFileObject($dir.'/'.$fileName.$fileNo.'.csv', 'w');
             $header = $src->current();
             $src->next();
-            $dist->fputcsv($header);
+            $dist->fputcsv($header, ',', '"', '\\');
 
             $i = 0;
             while ($row = $src->current()) {
-                $dist->fputcsv($row);
+                $dist->fputcsv($row, ',', '"', '\\');
                 $src->next();
 
                 if (!$src->eof() && ++$i % $this->eccubeConfig['eccube_csv_split_lines'] === 0) {
                     $fileNo++;
                     $dist = new \SplFileObject($dir.'/'.$fileName.$fileNo.'.csv', 'w');
-                    $dist->fputcsv($header);
+                    $dist->fputcsv($header, ',', '"', '\\');
                 }
             }
 

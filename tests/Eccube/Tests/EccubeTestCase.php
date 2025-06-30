@@ -134,7 +134,7 @@ abstract class EccubeTestCase extends WebTestCase
      * CustomerAddress を生成して返す.
      *
      * @param Customer $Customer 対象の Customer インスタンス
-     * @param boolean $is_nonmember 非会員の場合 true
+     * @param bool $is_nonmember 非会員の場合 true
      *
      * @return CustomerAddress
      */
@@ -159,7 +159,7 @@ abstract class EccubeTestCase extends WebTestCase
      * Product オブジェクトを生成して返す.
      *
      * @param string $product_name 商品名. null の場合はランダムな文字列が生成される.
-     * @param integer $product_class_num 商品規格の生成数
+     * @param int $product_class_num 商品規格の生成数
      *
      * @return Product
      */
@@ -202,9 +202,9 @@ abstract class EccubeTestCase extends WebTestCase
      *
      * @param Delivery $Delivery デフォルトで設定する配送オブジェクト
      * @param string $method 支払い方法名称
-     * @param integer $charge 手数料
-     * @param integer $rule_min 下限金額
-     * @param integer $rule_max 上限金額
+     * @param int $charge 手数料
+     * @param int $rule_min 下限金額
+     * @param int $rule_max 上限金額
      *
      * @return Payment
      */

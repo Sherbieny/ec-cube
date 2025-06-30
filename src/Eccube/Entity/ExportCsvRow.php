@@ -14,7 +14,7 @@
 namespace Eccube\Entity;
 
 if (!class_exists('\Eccube\Entity\ExportCsvRow')) {
-    class ExportCsvRow extends \Eccube\Entity\AbstractEntity
+    class ExportCsvRow extends AbstractEntity
     {
         /**
          * @var \Doctrine\Common\Collections\Collection
@@ -31,7 +31,7 @@ if (!class_exists('\Eccube\Entity\ExportCsvRow')) {
          *
          * @param string $data
          *
-         * @return \Eccube\Entity\ExportCsvRow
+         * @return ExportCsvRow
          */
         public function setData($data = null)
         {
@@ -43,7 +43,7 @@ if (!class_exists('\Eccube\Entity\ExportCsvRow')) {
         /**
          * Is data null
          *
-         * @return boolean
+         * @return bool
          */
         public function isDataNull()
         {

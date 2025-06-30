@@ -43,7 +43,7 @@ class CartService
     protected $session;
 
     /**
-     * @var \Doctrine\ORM\EntityManagerInterface
+     * @var EntityManagerInterface
      */
     protected $entityManager;
 
@@ -101,7 +101,7 @@ class CartService
         CartItemAllocator $cartItemAllocator,
         OrderRepository $orderRepository,
         TokenStorageInterface $tokenStorage,
-        AuthorizationCheckerInterface $authorizationChecker
+        AuthorizationCheckerInterface $authorizationChecker,
     ) {
         $this->session = $session;
         $this->entityManager = $entityManager;
@@ -411,7 +411,7 @@ class CartService
     /**
      * @param  string $pre_order_id
      *
-     * @return \Eccube\Service\CartService
+     * @return CartService
      */
     public function setPreOrderId($pre_order_id)
     {
@@ -434,7 +434,7 @@ class CartService
     }
 
     /**
-     * @return \Eccube\Service\CartService
+     * @return CartService
      */
     public function clear()
     {
@@ -512,7 +512,7 @@ class CartService
     /**
      * @param string $allocatedId
      */
-    protected function createCartKey($allocatedId, Customer $Customer = null)
+    protected function createCartKey($allocatedId, ?Customer $Customer = null)
     {
         if ($Customer instanceof Customer) {
             return $Customer->getId().'_'.$allocatedId;
