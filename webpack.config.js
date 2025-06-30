@@ -15,6 +15,7 @@ const pluginAdminJS = getPluginEntries("admin", "js");
 const pluginFrontSCSS = getPluginEntries("default", "scss");
 const pluginAdminSCSS = getPluginEntries("admin", "scss");
 const pluginSharedJS = getPluginEntries("shared", "js");
+const pluginSharedSCSS = getPluginEntries("shared", "scss");
 
 // Core + plugin assets per scope
 const frontEntry = [
@@ -22,6 +23,7 @@ const frontEntry = [
     ...pluginFrontJS,
     ...pluginFrontSCSS,
     ...pluginSharedJS,
+    ...pluginSharedSCSS,
 ];
 
 const adminEntry = [
@@ -29,6 +31,7 @@ const adminEntry = [
     ...pluginAdminJS,
     ...pluginAdminSCSS,
     ...pluginSharedJS,
+    ...pluginSharedSCSS,
 ];
 
 const entry = {
